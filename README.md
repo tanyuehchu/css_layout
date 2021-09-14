@@ -7,7 +7,7 @@ css 切版練習
 <!--  -->
 mao的美好生活提案： https://tanyuehchu.github.io/css_layout/ex.2-mao/index.html
 <!--  -->
-the affair： https://tanyuehchu.github.io/css_layout/ex.3-the_affair/index.html（使用bootstrap）
+the affair： https://tanyuehchu.github.io/css_layout/ex.3-the_affair/index.html
 <!--  -->
 beutii： https://tanyuehchu.github.io/css_layout/ex.4-beutii/index.html （使用bootstrap）
 <!--  -->
