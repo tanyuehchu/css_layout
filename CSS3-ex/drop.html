@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #fff;
+            align-items: center;
+            min-height: 100vh;
+            filter: contrast(30);
+        }
+
+        .drop {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(8, 185, 255);
+            border-radius: 50%;
+            opacity: 0;
+            animation: drop 5s linear infinite forwards;
+            filter: blur(20px);
+        }
+
+        .drop:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .drop:nth-child(3) {
+            animation-delay: 3s;
+        }
+
+        .collection {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            filter: blur(20px);
+            animation: collection 5s linear infinite both 1.5s;
+        }
+
+        @keyframes drop {
+            0% {
+                opacity: 0;
+                transform: translate(0, 600%)scale(.7);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translate(0, -80%)scale(.4);
+            }
+
+            100% {
+                transform: translate(0, -600%)scale(.3);
+            }
+
+        }
+
+        @keyframes collection {
+            0% {
+                transform: scale(1) rotate(0)
+            }
+
+            50% {
+                width: 110px;
+                height: 50px;
+                border-bottom-left-radius: 30%;
+                border-top-right-radius: 80%;
+                border-bottom-right-radius: 50%;
+            }
+
+
+            100% {
+                width: 100px;
+                transform: rotate(250deg);
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="drop"></div>
+        <div class="drop"></div>
+        <div class="drop"></div>
+        <div class="collection"></div>
+    </div>
+</body>
+
+</html>

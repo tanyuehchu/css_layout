@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>編集者新聞</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span,
+        a {
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+        }
+
+        .text-color-blue {
+            color: #0C273D;
+        }
+
+        .container {
+            padding: 0;
+            max-width: 1100px;
+        }
+
+        /* @media screen and (max-width:768px) {
+            .container {
+                padding: 20px;
+            }
+        } */
+
+        .row {
+            margin: 0;
+        }
+
+        nav a,
+        nav span {
+            color: black;
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+
+        nav img {
+            width: 150px;
+        }
+
+        .border-bottom-blue {
+            border-bottom: 1px solid rgb(12, 14, 32);
+        }
+
+        .border-top-blue {
+            border-top: 1px solid rgb(12, 14, 32);
+        }
+
+        .dark-blue-radius {
+            border-radius: 10px;
+            background-color: #0C273D;
+        }
+
+        .dark-blue-radius h5,
+        .dark-blue-radius p {
+            color: white;
+        }
+
+        .dark-blue-radius h5 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .dark-blue-radius p {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .btn span {
+            font-size: 12px;
+        }
+
+        .outline-lower {
+            height: 4px;
+        }
+
+        #section-2 .card p {
+            font-weight: 700;
+        }
+
+        #section-2 .card {
+            border-right: transparent;
+            border-left: transparent;
+            border-top: transparent;
+            border-radius: 0;
+        }
+
+
+        @media screen and (min-width:576px) and (max-width:768px) {
+
+            .sport {
+                width: 436px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+        }
+
+        @media screen and (min-width:375px) and (max-width:576px) {
+
+            .sport {
+                width: 218px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row justify-content-between align-items-center mt-4 pb-4 border-bottom-blue ">
+                <div class="mr-3">
+                    <img src="./img/ia_100000001.svg" alt="">
+                </div>
+                <i class="fas fa-bars d-md-none d-block"></i>
+                <div class="mr-auto d-none d-md-block">
+                    <ul class="d-flex  text-center list-unstyled m-0">
+                        <li><a href="#">A.全球意識</a></li>
+                        <li><a href="#">B.商業科技</a></li>
+                        <li><a href="#">C.文化體育</a></li>
+                        <li><a href="#">D.生活設計</a></li>
+                        <li><a href="#">E.探索發掘</a></li>
+                        <li><a href="#">O.評論</a></li>
+                        <li><a href="#">TheAlist</a></li>
+                        <li><a href="#">關於我們</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <span>登入</span>
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="section-1">
+        <div class="container border-bottom-blue pb-2 d-none d-md-block">
+            <div id="carousel-text" class="carousel slide mt-2 " data-ride="carousel">
+                <ol class="carousel-indicators m-0">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active bg-light px-2 py-2">
+                        <p class="lead">上輩子是個漫畫家」動畫導演 今敏《海歸線》創作後記</p>
+                    </div>
+                    <div class="carousel-item bg-light px-2 py-2">
+                        <p class="lead">如我們所知，這是全球經濟的末日</p>
+                    </div>
+                    <div class="carousel-item bg-light px-2 py-2">
+                        <p class="lead">稅務顧問的祕密生活： 這份工作不在於變花招避稅</p>
+                    </div>
+                    <div class="carousel-item bg-light px-2 py-2">
+                        <p class="lead">亂中有序：日本最狂放的倒杆比賽</p>
+                    </div>
+                    <div class="carousel-item bg-light px-2 py-2">
+                        <p class="lead">青年獵人古老的活武器：阿爾泰哈薩克人的獵鷹傳統</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-text" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-text" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="outline   border-bottom-blue">
+                <a href="">
+                    <div class="row justify-content-center">
+                        <div class="col-7 d-flex flex-column dark-blue-radius px-3 py-3 my-3">
+                            <div class="title w-50 mb-3">
+                                <img class="w-50" src="./img/ia_100000002.png" alt="">
+                            </div>
+                            <h5>但我有把人「書本」化，並以文字讀出那個人的「人生」的能力。</h5>
+                            <p>(岸邊露伴在羅浮》 ｜ 週刊編輯第十九期 P.20</p>
+                            <p class="text-center">我們循著自由的路徑，探索每一個擁有自由靈魂的個體。</p>
+                            <div class="btn">
+                                <button type="button" class="btn btn-light"><span>了解更多限時優惠方案</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="outline-lower border-bottom-blue"></div>
+        </div>
+    </section>
+    <section id="section-2">
+        <div class="container pb-1 border-bottom-blue">
+            <div class="container text-color-blue border-bottom-blue">
+                <div class="row mt-2 justify-content-between pb-3">
+                    <div class="col-12 col-md-6 border-right border-secondary-50">
+                        <div class="left-img mb-2">
+                            <img class="w-100" src="./img/RIM12.019-Platon-North-Kivu-East.jpg" alt="">
+                        </div>
+                        <div class="text p-md-3 text-md-left text-center">
+                            <h5>玫瑰色叢林之外 攝影師 Richard Mosse</h5>
+                            <p><small class="text-muted">攝影, 藝術2020/09/301 minute to read</small></p>
+                            <p class="text-muted">
+                                莫斯在攝影集《Incoming》裡說，「相機似乎同時喚起講故事的三種模式：神話、紀錄片，以及科幻小說。」過去莫斯駐點剛果民主共和國東部超過三年，透過二戰的軍用攝影技術：紅外線攝影機記錄剛果的軍事衝突與地景，呈現了超現實的玫瑰色灌木叢林；近年則是使用於戰地偵查與邊境監視的軍用機器：熱顯像攝影機，可從約
+                                30
+                                公里外探測熱輻射，偵測出人體熱能的監視技術設備，記錄敘利亞、伊拉克、阿富汗難民的移動。當武器作為一種觀看方式，透過影像，觀者得以重新審視軍用攝影機其道德、技術、隱私與美學等議題。
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-md-4 d-flex flex-column border-right border-secondary-50 text-md-left text-center">
+                        <div class="middle  my-2 pb-1 border-bottom border-secondary-50">
+                            <h6>好的科技不一定真的好——從車輛競爭史說起</h6>
+                            <p><small class="text-muted">2021/04/141 minute to read</small></p>
+                            <p class="text-muted">
+                                對比現在的電動車市佔率，我們很難想像，在上個世紀初，電動車的占比較現在高得多——在紐約或芝加哥這類大城市，街道上每10台行經的車輛，就有3台是電動車。</p>
+                        </div>
+                        <div class="middle  my-2 pb-1 border-bottom border-secondary-50">
+                            <h6>「COVID-19有個味道，狗狗聞得到」見見嗅探病毒的超級犬隊</h6>
+                            <p><small class="text-muted">2021/04/141 minute to read</small></p>
+                            <p class="text-muted">
+                                這一切的起點，是當蓋斯特聽一位友人説，她家的大麥町犬一天到晚聞她的痣。這位友人後來去看醫生除痣，結果發現自己患有惡性黑色素瘤（皮膚癌的一種）。</p>
+                        </div>
+                        <div class="middle">
+                            <h6>強・巴提斯的爵士急轉彎</h6>
+                            <p><small class="text-muted">2021/04/141 minute to read</small></p>
+                            <p class="text-muted">
+                                我記得有一次，我爸帶我去一個爵士俱樂部，原本我壓根不想去。可是我看到一個人，他在彈四度和弦，然後轉成小和弦，哇喔……再加上內聲部的旋律線，就好像在唱歌一樣。說真的，他後來像是從舞台上飄浮出去，帶著所有人沉浸在音樂裡，渾然忘我。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-12 d-flex flex-column text-md-left text-center">
+                        <div class="card mb-3">
+                            <div class="card-img w-100">
+                                <img class="w-100" src="./img/ia_100000006287.jpg" alt="">
+                            </div>
+                            <p class="mt-md-0 mt-3">
+                                玫瑰少年的痛不曾遠離：世新宿舍性霸凌事件，後來呢？
+                            </p>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-img w-100">
+                                <img class="w-100" src="./img/EXTREME_HAUNTS_6-7-2048x1638.jpg" alt="">
+                            </div>
+                            <p class="mt-md-0 mt-3">
+                                重現過往聲光： 《羅馬》導演記憶中的墨西哥城
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card-img w-100">
+                                <img class="w-100" src="./img/GettyImages-87831368.jpg" alt="">
+                            </div>
+                            <p class="mt-md-0 mt-3">
+                                殺死托洛斯基的血污冰鎬 蟄伏數十載後重現於世
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-3" class="mb-5">
+        <h5 class="text-center my-3" style="font-size: 14px;font-weight: 500;">THE A LIST</h5>
+        <div class="container  border-top-blue pt-1 border-bottom-blue">
+            <div class="container border-bottom-blue border-top-blue">
+                <div class="row mb-3">
+                    <div class="col-12 mt-3">
+                        <div class=" banner w-100 text-center d-flex flex-column justify-content-center"
+                            style="height:350px;background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) ,url(https://www.theaffairs.com/wp-content/uploads/2021/03/DSC_9821-scaled.jpg);background-size: cover;background-position: 100% 75%;border-radius: 10px;">
+                            <h5 class="mb-4 w-50 mx-auto text-light">只能成為自己想成為的自己」——台灣次文化創作者小肆與DISK對談</h5>
+                            <p class="mb-4 w-50 mx-auto text-light">時尚 藝術</p>
+                            <P class="px-5 w-50 mx-auto text-light d-none d-md-block">「反叛形象」、「獨立精神」似乎是存在於Dr.
+                                Martens與次文化族群之間的默契，讓街頭場景中總是能看見Dr. Martens的身影，這次邀請台灣小誌（Zine）長老級人物——小肆與隸屬Flow
+                                Down團隊的塗鴉藝術家——DISK為Dr. Martens的經典鞋款打造獨一無二的專屬新貌，並一同談談彼此對於台灣次文化環境的自我認知。</P>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class=" banner w-100 text-center d-flex flex-column justify-content-center"
+                            style="height:350px;background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) ,url(https://www.theaffairs.com/wp-content/uploads/2020/07/棉豆腐封面-scaled.jpg);background-size: cover;background-position: 100% 45%;border-radius: 10px;">
+                            <h5 class="mb-4 w-50 mx-auto text-light">以一場溫柔不黏膩的午覺，慶祝每個美好的下午時光</h5>
+                            <p class="mb-4 w-50 mx-auto text-light">A FRIEND</p>
+                            <P class="px-5 w-50 mx-auto text-light d-none d-md-block">在真正地嘗試過後，才能了解什麼才是最適合自己的，畢竟我們人生至少有
+                                1/3
+                                的時間都在這張床上，選一張好床這件事，一點都不得馬虎。窗外的雷陣雨終於下起來了，你繼續安然地在你的眠豆腐上，慶祝這又是一個令人快樂滿足的夏日午後。</P>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class=" banner w-100 text-center d-flex flex-column justify-content-center"
+                            style="height:350px;background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) ,url(https://www.theaffairs.com/wp-content/uploads/2020/07/03-scaled.jpg);background-size: cover;background-position: 100% 75%;border-radius: 10px;">
+                            <h5 class="mb-4 w-50 mx-auto text-light">Mysterty Ranch：城市生活的應用考量</h5>
+                            <p class="mb-4 w-50 mx-auto text-light">A FRIEND</p>
+                            <P class="px-5 w-50 mx-auto text-light d-none d-md-block">
+                                擁有軍方的認證加持，這樣的包款不但在山友和軍風迷之間奠定了不敗的印象， Mystery Ranch
+                                簡單大方亦不失時尚感的外觀，也很快的隨著都市戶外風格的起而流行，成為潮迷心中的最佳選擇，並在日本這樣一個講求細節和美感的國度中，成為都會戶外風格的最佳代名詞。</P>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container  border-bottom-blue pb-1">
+                <div class="container border-bottom-blue pb-3">
+                    <div class="row mt-4">
+                        <div class="col-12 col-sm-6 col-md-3 border-right text-md-left text-center">
+                            <h6>從瑞輝到摩德納:疫苗研發，誰最可能得到最大利益</h6>
+                            <div class="img-wrap w-100 my-3">
+                                <img class="w-100" src="./img/ia_100000010.jpg" alt="">
+                            </div>
+                            <p class="text-muted">
+                                疫苗市場未來會否仍是個投機產業，取決於疫苗是能一勞永逸（如麻疹疫苗），或須要定期接種（如流感）。無論如何，可以確定的是，接下來的日子裡將有一大筆肥水待撈。
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 border-right text-md-left text-center">
+                            <h6>蒙蔽駕駛雙眼的 ETC</h6>
+                            <div class="img-wrap w-100 my-3">
+                                <img class="w-100" src="./img/ia_100000011.jpg" alt="">
+                            </div>
+                            <p class="text-muted">
+                                通常執政者可能會擔心過路費調漲之後民怨四起，下次選舉就只能捲鋪蓋走人，因此比較不會在選舉年調漲過路費，但芬克斯坦發現，在引進 ETC
+                                之後，政府反而不怕在選舉年漲過路費——反正沒人會發現，我們愛怎麼漲就怎麼漲。
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 border-right text-md-left text-center">
+                            <h6>揭露：海鮮騙局，詐遍全球</h6>
+                            <div class="img-wrap w-100 my-3">
+                                <img class="w-100" src="./img/ia_100000012.jpg" alt="">
+                            </div>
+                            <p class="text-muted">
+                                全球海鮮捕獲量的很大部分，會先從漁船送至大型轉運船進行加工，而在轉運船上要貼上不實標示相對容易，而且有利可圖。
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 text-md-left text-center">
+                            <h6>無聊經濟</h6>
+                            <div class="img-wrap w-100 my-3">
+                                <img class="w-100" src="./img/PANDEMIC-BOREDOM-ADV21-3-0-1200x800.jpeg" alt="">
+                            </div>
+                            <p class="text-muted">
+                                特別的是，最後得標的買家並不能把這件藝術作品搬回家，而是會獲得這件作品的影像檔和一枚「非同質化代幣」（non-fungible token，簡稱 NFT），NFT
+                                會以區塊鏈技術記錄這件作品的資料、原作者的簽章，和得標者的所有權紀錄，目前任何人都無法偽造。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container border-top-blue mt-1">
+                    <div class="row">
+                        <div class="col-md col-sm-6 py-3">
+                            <div class="img-box w100 text-md-left text-center d-flex flex-column justify-content-center p-2 align-items-sm-start"
+                                style="min-height: 200px;background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) , url(./img/Screen-Shot-2021-05-13-at-2.39.1.jpg);background-size: cover;">
+                                <h2 class="text-light" style="font-size: 16px;">VERY GOOD MUSIC AND
+
+                                    SHOES：<br>海豚刑警
+                                </h2>
+                                <p class="text-light" style="line-height: 10px;"><small>2021/05/12</small></p>
+                                <p class="text-light" style="line-height: 10px;"><small>時尚, 音樂</small></p>
+                                <p class="text-light" style="line-height: 10px;">
+                                    1 minute to read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-6 py-3">
+                            <div class="img-box w100  text-md-left text-center d-flex flex-column justify-content-center p-2 align-items-sm-start"
+                                style="min-height: 200px;background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) , url(./img/ia_100000014.jpg);background-size: cover;">
+                                <h2 class="text-light" style="font-size: 16px;">we Love musicals, but we’re not Perfect.
+                                    now Change!
+                                </h2>
+                                <p class="text-light" style="line-height: 10px;"><small>2021/05/12</small></p>
+                                <p class="text-light" style="line-height: 10px;"><small>時尚, 音樂</small></p>
+                                <p class="text-light" style="line-height: 10px;">
+                                    1 minute to read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-6 py-3">
+                            <div class="img-box w100  text-md-left text-center d-flex flex-column justify-content-center p-2 align-items-sm-start"
+                                style="min-height: 200px;background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) , url(./img/ia_100000016.jpg);background-size: cover;background-position: 50%;">
+                                <h2 class="text-light" style="font-size: 16px;">當「金蓮」成為「金蓮」
+                                </h2>
+                                <p class="text-light" style="line-height: 10px;"><small>2021/05/12</small></p>
+                                <p class="text-light" style="line-height: 10px;"><small>時尚, 音樂</small></p>
+                                <p class="text-light" style="line-height: 10px;">
+                                    1 minute to read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-6 py-3">
+                            <div class="img-box w100  text-md-left text-center d-flex flex-column justify-content-center p-2 align-items-sm-start"
+                                style="min-height: 200px;background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) , url(./img/ia_100000006567.jpg);background-size: cover;background-position: 50% 70%;">
+                                <h2 class="text-light" style="font-size: 16px;">強・巴提斯的爵士急轉彎</h2>
+                                <p class="text-light" style="line-height: 10px;"><small>2021/05/12</small></p>
+                                <p class="text-light" style="line-height: 10px;"><small>時尚, 音樂</small></p>
+                                <p class="text-light" style="line-height: 10px;">
+                                    1 minute to read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md col-sm-12 py-3">
+                            <div class="img-box w100  text-md-left text-center d-flex flex-column justify-content-center p-2 align-items-md-start"
+                                style="min-height: 200px;background:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)) , url(./img/ia_100000006287.jpg);background-size: cover;">
+                                <h2 class="text-light" style="font-size: 16px;">音樂：一種感動別人卻養不活自己的職業
+                                </h2>
+                                <p class="text-light" style="line-height: 10px;"><small>2021/05/12</small></p>
+                                <p class="text-light" style="line-height: 10px;"><small>時尚, 音樂</small></p>
+                                <p class="text-light" style="line-height: 10px;">
+                                    1 minute to read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top-blue  mt-5 border-bottom mb-1">
+            <div class="container border-top-blue mt-1 mb-1 text-center border-bottom pb-3">
+                <h1 class="my-3">精神原鄉召喚與呼應—— 評《雨雪霏霏：婆羅洲童年記事》</h1>
+                <p class="text-muted border-bottom py-3"><a class="text-muted" href="">書籍</a> 2020/09/271minute to read
+                </p>
+                <p class="border-bottom py-3">Remember, Remember, The Fifth of November.</p>
+                <div class="row">
+                    <div class="col-md-5 col-12 text-left p-2 border-right text-md-left text-center">
+                        <img class="w-100" src="./img/whhas.jpeg" alt="">
+                        <h5 class="mt-4">老歌新姿態，東西洋金曲歷久不衰</h5>
+                        <p class="text-muted">音樂 2020/09/18</p>
+                        <p class="text-muted">
+                            懷舊一直是流行樂界裡的不可或缺的一部分，每一首金曲的誕生都包含著一個時代的集體記憶，堆疊了故事、累積了經驗，當時光荏苒，這首歌重新回到耳朵裡時，不僅濃厚的親切感教人難以忘懷，甚至能化成龐大商機，於是在西洋影壇或東洋樂壇，那股徐徐的懷舊風也就這樣不止息地繼續吹拂。
+                        </p>
+
+                    </div>
+                    <div class="col-md col-6 p-2 text-left border-right text-md-left text-center">
+                        <img class="w-100" src="./img/074_iod_making_of_book_stills_p3.jpeg" alt="">
+                        <h5 class="my-3" style="font-size: 14px;">《犬之島》：用一股極致的傻勁說童話</h5>
+                        <p class="text-muted"><small>C. 文化體育, 媒體, 藝術, 電影 <br> 2020/03/04</small> </p>
+                        <p class="text-muted">布萊恩‧克蘭斯頓（Bryan
+                            Cranston）說：「狗狗們天生有一股取悅（人）的欲望，我相信人類也是。我們都嚮往著被接納、被喜歡、被尊重。」——而我認為，這段話就是這故事真正想表達的：狗狗對人類的情感，是如此單純而一往情深，身為人，我們怎麼能不欣然感激地收下它？怎麼可以背叛牠們毫無保留的信任？
+                        </p>
+
+                    </div>
+                    <div class="col-md col-6 p-2 text-left border-right text-md-left text-center">
+                        <img class="w-100" src="./img/307097-20190315-andrew-bird-my-finest-work-yet.jpeg" alt="">
+                        <h5 class="my-3" style="font-size: 14px;">快樂的薛西弗斯哼著歌</h5>
+                        <p class="text-muted"><small>C. 文化體育, 媒體, 藝術, 電影 <br> 2020/03/04</small> </p>
+                        <p class="text-muted">
+                            他那不經世故的外表下，拉著提琴、彈著吉他與吹著口哨，顯得與他周遭的世界格格不入。無論他寫什麼、唱什麼，從物種滅絕、歷史啟示到天災人禍，安朱鳥就像那過於樂觀的薛西弗斯，罔顧命運的嘲弄與安排
+                            ......
+                        </p>
+
+                    </div>
+                    <div class="col p-2 text-left border-right">
+                        <img class="w-100" src="./img/22222.jpeg" alt="">
+                        <h5 class="my-3" style="font-size: 14px;">Steadicam——洛基背後不為人知的幕後推手</h5>
+                        <p class="text-muted"><small>C. 文化體育, 媒體, 藝術, 電影 <br> 2020/03/04</small> </p>
+                        <p class="text-muted">洛基背後的推手 Steadicam 隆重登場後，持續了 40 年不墜的職業生涯，連 Steadicam 之父蓋勒．布朗自己都始料未及。
+                        </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <h1 class="my-3">體壇記事</h1>
+            <p class="text-muted border-bottom py-3"><a class="text-muted" href="">網球, 足球, 運動</a> 2021/04/221 minute to
+                read
+            </p>
+            <p class="border-bottom py-3">If you build it, he will come.（Field of Dreams）</p>
+            <div class="row justify-content-between">
+                <div class="sport d-flex flex-column justify-content-center"
+                    style="min-width: 218px; min-height: 300px; background:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)) ,url(./img/GettyImages-1300923555.jpeg);background-position: 50% 100%; background-size: cover;">
+                    <h6 class="text-light">體壇短訊</h6>
+                    <p class="text-light">2021/04/22</p>
+                    <p class="text-light">網球,足球,運動</p>
+                    <p class="text-light">1 minutes to read</p>
+                </div>
+                <div class="sport d-flex flex-column justify-content-center"
+                    style=" min-width: 218px; min-height: 300px; background:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)) ,url(./img/ia_100000249.jpg);background-position: 50% 100%; background-size: cover;">
+                    <h6 class="text-light">體壇短訊</h6>
+                    <p class="text-light">2021/04/22</p>
+                    <p class="text-light">網球,足球,運動</p>
+                    <p class="text-light">1 minutes to read</p>
+                </div>
+                <div class="sport d-flex flex-column justify-content-center"
+                    style="min-width: 218px ;min-height: 300px; background:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)) ,url(./img/ia_100000242.jpg);background-position: 50% 50%; background-size:cover;background-repeat: no-repeat;">
+                    <h6 class="text-light">體壇短訊</h6>
+                    <p class="text-light">2021/04/22</p>
+                    <p class="text-light">網球,足球,運動</p>
+                    <p class="text-light">1 minutes to read</p>
+                </div>
+                <div class="sport d-flex flex-column justify-content-center"
+                    style="min-width: 218px; min-height: 300px; background:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)) ,url(./img/ia_100000252.jpg);background-position: 50% 10%; background-size: 300%;background-repeat: no-repeat;">
+                    <h6 class="text-light">體壇短訊</h6>
+                    <p class="text-light">2021/04/22</p>
+                    <p class="text-light">網球,足球,運動</p>
+                    <p class="text-light">1 minutes to read</p>
+                </div>
+                <div class="sport d-flex flex-column justify-content-center"
+                    style="min-width: 218px; min-height: 300px; background:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)) ,url(./img/ia_100000007113.jpg);background-position: 50% 50%; background-size: 200%;background-repeat: no-repeat;">
+                    <h6 class="text-light">體壇短訊</h6>
+                    <p class="text-light">2021/04/22</p>
+                    <p class="text-light">網球,足球,運動</p>
+                    <p class="text-light">1 minutes to read</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer style="background-color: rgb(24, 24, 24);">
+        <div class="container">
+            <div class="row justify-content-between text-center p-4">
+                <div class="col-4">
+                    <h6 class="text-light my-4" style="font-size: 14px;">全球意識</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">國際事務</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">國內</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">經濟</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">媒體</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">工作</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-light my-4" style="font-size: 14px;">文化體驗</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">書籍</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">音樂</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">電影</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">電視</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">藝術</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">劇場</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">攝影</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-light my-4" style="font-size: 14px;">專欄評論</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">社論</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">專欄作家</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">來論</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">系列</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">悼念</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-light my-4" style="font-size: 14px;">生活設計</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">愛情</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">設計</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">時尚</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">健康</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">花草園藝</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">建築</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-light my-4" style="font-size: 14px;">自然探索</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">旅行</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">自然</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">野外活動</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">飲食</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-light my-4" style="font-size: 14px;">運動</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">棒球</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">籃球</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">網球</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">足球</a></li>
+                        <li><a class="text-muted text-decoration-none" style="font-size: 13px;" href="#">田徑</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

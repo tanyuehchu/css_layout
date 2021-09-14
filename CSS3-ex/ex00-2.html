@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+            background: url(./images/000249640013.jpeg);
+        }
+
+        .card {
+            width: 300px;
+            border-radius: 10px;
+            background-color: rgb(255 255 255 / 55%);
+            border: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin: 50px;
+            overflow: hidden;
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
+        .background {
+            width: 300px;
+            height: 150px;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            transition: .8s;
+        }
+
+        .background img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            opacity: .8;
+        }
+
+        .frontimg {
+            width: 300px;
+        }
+
+        .backimg {
+            width: 300px;
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .background {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover {
+            box-shadow: 0px 20px 10px rgba(134, 134, 134, 0.445);
+            transform: translateY(-10px);
+        }
+
+        .card:hover h1 {
+            letter-spacing: 5px;
+        }
+
+        .btn:hover {
+            box-shadow: 5px 5px 2px rgb(75, 160, 115) inset, 5px 5px 2px rgba(77, 77, 77, 0.377);
+        }
+
+
+
+
+
+        .gril {
+            position: absolute;
+            transform: translateX(50%)translateY(-50px);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid white;
+        }
+
+        .gril img {
+            width: 160%;
+            object-position: -40px;
+        }
+
+        h1,
+        p,
+        .btn {
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 100px;
+        }
+
+        .btn {
+            margin: 0 auto;
+            width: 100px;
+            background-color: rgb(45, 97, 69);
+            border-radius: 10px;
+        }
+
+        .btn a {
+            line-height: 30px;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="background">
+            <img class="frontimg" src="./images/flowers.jpg" alt="">
+            <img class="backimg" src="./images/city.jpg" alt="">
+        </div>
+        <div class="gril">
+            <img src="./images/ex1_pic1.jpg" alt="">
+        </div>
+        <h1>Dan</h1>
+        <p>hello i'm Dan</p>
+        <div class="btn"><a href="">follow me!</a></div>
+    </div>
+</body>
+
+</html>

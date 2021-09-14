@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貓的美好生活</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="./fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+
+
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <style>
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+        }
+
+        .nav-link>img {
+            width: 150px;
+        }
+
+        a {
+            color: black;
+        }
+
+        .nav-link ul li {
+            padding: 0 10px;
+        }
+
+        dl,
+        ol,
+        ul {
+            margin: 0;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .banner,
+        .banner-2 {
+            margin: 0 auto;
+        }
+
+        .banner-2 ul li {
+            margin: 5px 2px;
+            padding: 5px 35px;
+            border: 1px solid rgb(201, 148, 148);
+            border-radius: 20px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .nav-link ul li {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .banner-2 ul li {
+                padding-top: 5px;
+            }
+        }
+
+        .banner-2 ul li:hover {
+            background-color: rgb(182, 141, 141);
+        }
+
+        .banner-2 ul li a:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        #section2 li a {
+            font-size: 14px;
+        }
+
+        #section3 .card {
+
+            position: relative;
+            display: flex;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 0;
+        }
+
+        .cat .card {
+            width: 550px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .cat-radius .card {
+            width: 350px;
+        }
+
+        #section3 h2 {
+            border-bottom: 1px solid rgb(223, 223, 223);
+        }
+
+        .item-display p {
+            font-size: 12px;
+            line-height: 8px;
+        }
+
+        .item-display .card {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="container col-md-12">
+            <div class="nav-link d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <img src="./img/original.png" alt="">
+                <ul class="list-unstyled d-flex align-items-center">
+                    <li><a href="" #=""></a>找新品</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            找優惠
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li><a href="" #=""></a>找貓砂</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            找用的
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            找吃的
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pidan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            找品牌
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            找顏色
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li><a href="" #=""></a>貓開箱</li>
+                    <li><a href="" #=""></a>狗狗館</li>
+                </ul>
+                <div class="nav-contact d-md-block ml-md-auto ml-lg-0">
+                    <!-- RWD-尺寸midium以下出現，margin-left往左推，large以上margin零 -->
+                    <a href="" #="" class="px-1"><i class="fas fa-search"></i></a>
+                    <a href="" #="" class="px-1"><i class="fas fa-comment"></i></a>
+                    <a href="" #="" class="px-1"><i class="fas fa-user"></i></a>
+                    <a href="" #="" class="px-1"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <div class="show-bar d-md-block d-xl-none ml-3">
+                    <!-- md以下出現，到xl以上沒有 -->
+                    <a href=""><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <section id=section1>
+        <div id="carousel-1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/ia_400000016.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ia_400000024.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ia_400000025.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="banner col-11 mt-5">
+            <img class="w-100" src="./img/2000x.jpg" alt="">
+            <img class="w-100" src="./img/2400x.png" alt="">
+        </div>
+        <div class="banner-2 container d-flex flex-md-row justify-content-center">
+            <ul class="d-flex flex-md-row flex-wrap justify-content-center list-unstyled">
+                <li><a href="#">貓的客廳</a></li>
+                <li><a href="#">貓的餐廳</a></li>
+                <li><a href="#">貓的廁所</a></li>
+                <li><a href="#">貓的玩具</a></li>
+                <li><a href="#">貓的護理</a></li>
+                <li><a href="#">貓的戶外</a></li>
+                <li><a href="#">貓的食品</a></li>
+                <li><a href="#">狗狗用品</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="container mt-5 pt-5 text-center">
+            <div class="row cat d-flex justify-content-sm-center justify-content-md-between">
+                <div class="card p-0 ">
+                    <img class="w-100" src="./img/1200x.png" alt="">
+                </div>
+                <div class="card p-0 ">
+                    <img class="w-100" src="./img/ia_400000037.jpg" alt="">
+                </div>
+            </div>
+            <div class="row cat-radius d-flex justify-content-sm-center justify-content-md-between mt-5 pt-5">
+                <div class="card pb-sm-3">
+                    <img src="./img/800x.png" alt="">
+                </div>
+                <div class="card pb-sm-3">
+                    <img src="./img/800x-2.png" alt="">
+                </div>
+                <div class="card ">
+                    <img src="./img/800x-3.png" alt="">
+                </div>
+            </div>
+            <h2 class="font-weight-normal my-5 py-3">熱銷品項 Hot Sale</h2>
+
+            <div class="row item-display d-flex justify-content-between  mt-5 pt-3">
+                <div class="card col-md-3 col-sm-6">
+                    <!-- col為相對格數 md->3/12 sm-> 6/12 -->
+                    <a href="#=">
+                        <img src=" ./img/ia_400000187.jpg" alt="">
+                        <p>pidan | 雪屋 貓砂盆</p>
+                        <p>NT$1,590</p>
+                        <p class="text-muted">NT$1,990</p>
+                    </a>
+                </div>
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000189.jpg" alt="">
+                        <p>Furrytail | 小宅貓砂盆</p>
+                        <p>NT$1,890</p>
+                    </a>
+                </div>
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/800-5x.png" alt="">
+                        <p>pidan | 渴睡款 夏季清涼窩</p>
+                        <p>NT$1,990</p>
+                        <p class="text-muted">NT$2,350</p>
+                    </a>
+                </div>
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/800-6x.png" alt="">
+                        <p>pidan | 雙層巴適款 夏季清涼窩</p>
+                        <p>NT$2,850</p>
+                    </a>
+                </div>
+                <!-- 第二行 -->
+
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000110.jpg" alt="">
+                        <p>pidan | 象雞款 夏季清涼窩</p>
+                        <p>NT$2,550</p>
+                    </a>
+                </div>
+
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000124.jpg" alt="">
+                        <p>pidan | 12L大容量儲糧桶</p>
+                        <p>NT$790</p>
+                        <p class="text-muted">NT$890</p>
+                    </a>
+                </div>
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000112.jpg" alt="">
+                        <p>Vetreska 未卡 | 花朵仙人掌貓爬架</p>
+                        <p>NT$3850</p>
+                    </a>
+                </div>
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000122.jpg" alt="">
+                        <p>SOFTZOO | 月半雙碗小餐桌 (兩色)</p>
+                        <p>NT$650</p>
+                    </a>
+                </div>
+                <!-- 第三行 -->
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000211.jpg" alt="">
+                        <p>pidan | 寵物背包</p>
+                        <p>NT$1,590</p>
+                    </a>
+                </div>
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000225.jpg" alt="">
+                        <p>Housmall | Eggy 小宅包 (兩色)</p>
+                        <p>NT$450</p>
+                    </a>
+                </div>
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000130.jpg" alt="">
+                        <p>pidan | 寵物冰墊 - 蜂蜜檸檬茶款</p>
+                        <p>NT$650</p>
+                    </a>
+                </div>
+                <div class="card col-md-3 col-sm-6">
+                    <a href="#=">
+                        <img src="./img/ia_400000215.jpg" alt="">
+                        <p>AIWO | 單肩透明潛水艙外出包</p>
+                        <p>NT$2,150 </p>
+                    </a>
+                </div>
+                <p class="lead">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

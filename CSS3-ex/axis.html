@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 400px;
+            margin: 300px;
+            perspective: 1000px;
+            position: relative;
+        }
+
+        /* ----------------------------------------------- */
+
+        .xaxis {
+            border-top: 1px solid rgb(151, 151, 151);
+        }
+
+        .xaxis::before {
+            position: absolute;
+            content: "-x";
+        }
+
+        .xaxis::after {
+            content: "+x";
+            float: right;
+        }
+
+        /* ----------------------------------------------- */
+
+        .yaxis {
+            position: absolute;
+            width: 1px;
+            height: 400px;
+            border-left: 1px solid rgb(151, 151, 151);
+            transform: translate(150px, -200px);
+        }
+
+        .yaxis::before {
+            position: absolute;
+            content: "-y";
+            width: 20px;
+        }
+
+        .yaxis::after {
+            position: absolute;
+            content: "+y";
+            transform: translateY(380px);
+        }
+
+        /* ----------------------------------------------- */
+
+        .zaxis {
+            position: absolute;
+            width: 300px;
+            height: 1px;
+            border-top: 1px dashed rgb(0, 109, 128);
+            transform: rotate(40deg);
+        }
+
+        .zaxis::before {
+            position: absolute;
+            content: "+z";
+        }
+
+        .zaxis::after {
+            content: "-z";
+            float: right;
+        }
+
+        /* ----------------------------------------------- */
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 999em;
+            background-color: rgb(43, 223, 255);
+            opacity: .5;
+            position: absolute;
+            top: -50px;
+            right: 100px;
+            /* -------------------這裡如果使用transform會被的animation的transform吃掉，所以要用absolute對齊---------------------------------- */
+            animation: rotateY 2s linear infinite;
+        }
+
+        @keyframes rotateY {
+            0% {
+                transform: rotate3d(0, 1, 0, 0) translate3d(0, 0, 150px);
+            }
+
+            100% {
+                transform: rotate3d(0, 1, 0, 360deg) translate3d(0, 0, 150px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="coordinate">
+            <div class="xaxis"></div>
+            <div class="yaxis"></div>
+            <div class="zaxis"></div>
+        </div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
