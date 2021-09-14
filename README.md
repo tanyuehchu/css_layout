@@ -12,3 +12,14 @@ the affair： https://tanyuehchu.github.io/css_layout/ex.3-the_affair/index.html
 beutii： https://tanyuehchu.github.io/css_layout/ex.4-beutii/index.html （使用bootstrap）
 <!--  -->
 Tobias-Jacobsons： https://tanyuehchu.github.io/css_layout/ex.5-Tobias-Jacobsons/index.html
+
+<!-- -----------------css 練習--------------------- -->
+
+3D transforms 繞y軸旋轉
+https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/axis.html
+
+動畫效果嘗試
+https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/drop.html
+
+卡片效果嘗試
+https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/ex00-2.html
