@@ -18,10 +18,10 @@ Tobias-Jacobsons： https://tanyuehchu.github.io/css_layout/ex.5-Tobias-Jacobson
 <!--  -->
 <!--  -->
 3D transforms 繞y軸旋轉
-https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/axis.html
+https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/index01.html
 
 動畫效果嘗試
-https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/drop.html
+https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/index02.html
 
 卡片效果嘗試
-https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/ex00-2.html
+https://tanyuehchu.github.io/css_layout/css_layout/CSS3-ex/index03.html
